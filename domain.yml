@@ -1,0 +1,84 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - find_coach
+  - coach_details
+  - coach_availability
+  - coach_rate
+  - coach_location
+  - coach_experience
+  - coach_language
+  - information
+  - request_diet_or_training
+
+responses:
+  utter_greet:
+    - text: "Hey! How can I help you with finding the best coach today?"
+
+  utter_happy:
+    - text: "I'm glad to hear that! Let's continue!"
+
+  utter_goodbye:
+    - text: "Goodbye! Feel free to come back anytime if you need help with coaching."
+
+  utter_affirm:
+    - text: "Alright! Let me know if there’s anything specific you’re looking for."
+
+  utter_deny:
+    - text: "No problem. Let me know if there's anything else I can help you with!"
+
+  utter_mood_great:
+    - text: "I'm glad to hear that! How can I assist you with finding a coach today?"
+
+  utter_mood_unhappy:
+    - text: "I'm sorry to hear that. If there's anything I can do to help, just let me know."
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up!"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_iamabot:
+    - text: "I am a bot, here to help you find the perfect coach for your needs."
+
+  utter_find_coach:
+    - text: "Sure! Please let me know the type of sport or training you’re interested in, and I’ll suggest some top coaches for you."
+
+  utter_coach_details:
+    - text: "Here’s what I know about {coach_name}. Let me pull up their details for you."
+
+  utter_coach_availability:
+    - text: "{coach_name} is available on {availability}. Let me know if you’d like to proceed with scheduling."
+
+  utter_coach_rate:
+    - text: "The hourly rate for {coach_name} is {rate} RMB. Let me know if that works for you."
+
+  utter_coach_location:
+    - text: "{coach_name} is located in {location}. Would you like to find other coaches in this area?"
+
+  utter_coach_experience:
+    - text: "{coach_name} has {years_of_experience} years of experience in {sport}. Sounds like a great option!"
+
+  utter_coach_language:
+    - text: "{coach_name} speaks {languages_spoken}. Let me know if that’s suitable for your needs."
+
+  utter_information:
+    - text: |
+        CoachWise is a platform that connects you with professional coaches for various sports and training. Our coaches are certified and experienced, providing personalized programs to help you achieve your goals. 
+        If you want more details, feel free to ask about specific services or policies!
+
+  utter_request_diet_or_training:
+    - text: |
+        CoachWise doesn’t directly provide diet or training programs, but we have coaches who specialize in personalized plans and training routines. 
+        I can suggest a coach who can help you with what you're looking for. What type of training are you interested in?
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

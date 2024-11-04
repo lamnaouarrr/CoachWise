@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Material Icons CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap">
+</head>
+<body>
+    <div class="background">
+        <div class="overlay"></div>
+        <div class="navbar">
+            <img src="images/home/logo.png" alt="Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#coaches">COACHES</a></li> <!-- Link updated with #coaches -->
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <button class="login-btn" id="loginBtn">Log In</button>
+        </div>
+        <div class="content">
+            <h1 class="title">Find the Best Coaches to Guide You</h1>
+            <p class="subtitle">Empowering you to achieve your goals with personalized coaching</p>
+            <div class="options">
+                <div class="search-container">
+                    <select class="category-select">
+                        <option value="" disabled selected>What are you looking for?</option>
+                        <option value="life-coaching">I'm looking for a coach</option>
+                        <option value="career-coaching">I'm looking for a trainee</option>
+                    </select>
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button class="search-btn">Search</button>
+                </div>
+                <button class="join-btn">Join Us</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES CONTENT STARTS -->
+    <div class="services-contents" id="services">
+        <!--<h2 class="services-title">Services</h2>-->
+        <h1 class="services-title2"> SERVICES WE OFFER</h1>
+
+        <div class="service-box">
+            <div class="service-icon-box" id="service-icon">
+                <span class="material-symbols-outlined">fitness_center</span>
+            </div>
+            <div class="service-desc">
+                <h2>Body Building</h2>
+                <p>Our body building programs help you build strength and achieve your fitness goals with personalized plans.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-icon-box" id="service-icon">
+                <span class="material-symbols-outlined">self_improvement</span>
+            </div>
+            <div class="service-desc">
+                <h2>Yoga</h2>
+                <p>Find balance and peace with our yoga classes, designed to improve flexibility and mindfulness for all levels.</p>
+            </div>
+        </div>
+        
+        <div class="service-box">
+            <div class="service-icon-box" id="service-icon">
+                <span class="material-symbols-outlined">sports_mma</span>
+            </div>
+            <div class="service-desc">
+                <h2>Boxing</h2>
+                <p>Experience the thrill of boxing while getting fit. Our trainers provide a safe and encouraging environment.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-icon-box" id="service-icon">
+                <span class="material-symbols-outlined">directions_run</span>
+            </div>
+            <div class="service-desc">
+                <h2>Running Coaching</h2>
+                <p>Improve your running skills with our coaching programs designed for both beginners and experienced runners.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-icon-box" id="service-icon">
+                <span class="material-symbols-outlined">pool</span>
+            </div>
+            <div class="service-desc">
+                <h2>Swimming</h2>
+                <p>Join our swimming classes to enhance your technique and enjoy the benefits of water fitness.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-icon-box" id="service-icon">
+                <span class="material-symbols-outlined">favorite</span>
+            </div>
+            <div class="service-desc">
+                <h2>Health Coaching</h2>
+                <p>Work with our health coaches to achieve a holistic approach to your wellness journey.</p>
+            </div>
+        </div>
+        
+        <div class="service-box">
+            <div class="service-icon-box" id="service-icon">
+                <span class="material-symbols-outlined">sports_basketball</span>
+            </div>
+            <div class="service-desc">
+                <h2>Basketball Coaching</h2>
+                <p>Enhance your basketball skills with professional coaching sessions tailored to all experience levels.</p>
+            </div>
+        </div>
+        
+        <div class="service-box">
+            <div class="service-icon-box" id="service-icon">
+                <span class="material-symbols-outlined">sports_tennis</span>
+            </div>
+            <div class="service-desc">
+                <h2>Tennis Coaching</h2>
+                <p>Join our tennis coaching program to improve your technique and learn from experienced trainers.</p>
+            </div>
+        </div>
+        
+        <button onclick="window.location.href='More_Services.html'" class="see-more-btn">Check Out More Services on Our Homepage!</button>
+    </div>
+    <!-- SERVICES CONTENT ENDS -->
+   
+    <!-- COACHES CONTENT STARTS -->
+    <div class="coaches-contents" id="coaches">
+        <h2 class="coaches-title">OUR COACHES</h2>
+        <div class="coaches-grid">
+            <div class="coach-card">
+                <img src="images/coaches/fitnesse.jpg" alt="Coach 1" class="coach-image">
+                <h3 class="coach-name">John Doe</h3>
+                <p class="coach-specialist">Fitness Trainer</p>
+                <button class="view-profile-btn" onclick="window.location.href='coaches_profile.html'">View Profile</button>
+
+            </div>
+            <div class="coach-card">
+                <img src="images/coaches/yoga.jpg" alt="Coach 2" class="coach-image">
+                <h3 class="coach-name">Jane Smith</h3>
+                <p class="coach-specialist">Yoga Instructor</p>
+                <button class="view-profile-btn">View Profile</button>
+            </div>
+            <div class="coach-card">
+                <img src="images/coaches/box.jpg" alt="Coach 3" class="coach-image">
+                <h3 class="coach-name">Mike Brown</h3>
+                <p class="coach-specialist">Boxing Coach</p>
+                <button class="view-profile-btn">View Profile</button>
+            </div>
+            <div class="coach-card">
+                <img src="images/coaches/running.jpg" alt="Coach 4" class="coach-image">
+                <h3 class="coach-name">james Lincon </h3>
+                <p class="coach-specialist">Running Coach</p>
+                <button class="view-profile-btn">View Profile</button>
+            </div>
+        </div>
+    </div>
+    <!-- COACHES CONTENT ENDS -->
+
+    <script src="00.js"></script>
+</body>
+</html>

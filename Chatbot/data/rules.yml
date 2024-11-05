@@ -1,0 +1,90 @@
+version: "3.1"
+
+rules:
+
+- rule: Greet the user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Say goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: Affirm response
+  steps:
+    - intent: affirm
+    - action: utter_affirm
+
+- rule: Deny response
+  steps:
+    - intent: deny
+    - action: utter_deny
+
+- rule: Respond to mood_great
+  steps:
+    - intent: mood_great
+    - action: utter_mood_great
+
+- rule: Respond to mood_unhappy
+  steps:
+    - intent: mood_unhappy
+    - action: utter_mood_unhappy
+
+- rule: Respond to bot challenge
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+- rule: Provide information about the platform
+  steps:
+    - intent: information
+    - action: utter_information
+
+- rule: Handle request for diet or training
+  steps:
+    - intent: request_diet_or_training
+    - action: utter_request_diet_or_training
+
+- rule: Handle find coach request
+  steps:
+    - intent: find_coach
+    - action: utter_find_coach
+
+- rule: Find best coach for a specific sport
+  steps:
+    - intent: find_coach
+    - slot_was_set:
+        - sport: "some_sport"
+    - action: action_find_best_coach
+
+- rule: Provide coach details
+  steps:
+    - intent: coach_details
+    - action: utter_coach_details
+
+- rule: Provide coach availability
+  steps:
+    - intent: coach_availability
+    - action: utter_coach_availability
+
+- rule: Provide coach rate
+  steps:
+    - intent: coach_rate
+    - action: utter_coach_rate
+
+- rule: Provide coach location
+  steps:
+    - intent: coach_location
+    - action: utter_coach_location
+
+- rule: Provide coach experience
+  steps:
+    - intent: coach_experience
+    - action: utter_coach_experience
+
+- rule: Provide coach language
+  steps:
+    - intent: coach_language
+    - action: utter_coach_language

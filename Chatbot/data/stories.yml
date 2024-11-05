@@ -1,0 +1,90 @@
+version: "3.1"
+
+stories:
+  
+- story: greet the user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: user says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: user affirms
+  steps:
+    - intent: affirm
+    - action: utter_affirm
+
+- story: user denies
+  steps:
+    - intent: deny
+    - action: utter_deny
+
+- story: user is in a great mood
+  steps:
+    - intent: mood_great
+    - action: utter_mood_great
+
+- story: user is unhappy
+  steps:
+    - intent: mood_unhappy
+    - action: utter_mood_unhappy
+
+- story: user challenges bot identity
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+- story: user asks for platform information
+  steps:
+    - intent: information
+    - action: utter_information
+
+- story: user requests diet or training plan
+  steps:
+    - intent: request_diet_or_training
+    - action: utter_request_diet_or_training
+
+- story: user requests a coach for a specific sport
+  steps:
+    - intent: find_coach
+    - slot_was_set:
+        - sport: "some_sport"
+    - action: action_find_best_coach
+
+- story: user requests general coach recommendation
+  steps:
+    - intent: find_coach
+    - action: utter_find_coach
+
+- story: user asks for coach details
+  steps:
+    - intent: coach_details
+    - action: utter_coach_details
+
+- story: user asks for coach availability
+  steps:
+    - intent: coach_availability
+    - action: utter_coach_availability
+
+- story: user asks for coach rate
+  steps:
+    - intent: coach_rate
+    - action: utter_coach_rate
+
+- story: user asks for coach location
+  steps:
+    - intent: coach_location
+    - action: utter_coach_location
+
+- story: user asks for coach experience
+  steps:
+    - intent: coach_experience
+    - action: utter_coach_experience
+
+- story: user asks for coach language
+  steps:
+    - intent: coach_language
+    - action: utter_coach_language

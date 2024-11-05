@@ -1,0 +1,102 @@
+version: "3.1"
+
+test_stories:
+
+  - story: greet and farewell interaction
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: affirm interaction
+    steps:
+      - intent: affirm
+      - action: utter_affirm
+
+  - story: deny interaction
+    steps:
+      - intent: deny
+      - action: utter_deny
+
+  - story: mood happy interaction
+    steps:
+      - intent: mood_great
+      - action: utter_mood_great
+
+  - story: mood unhappy interaction
+    steps:
+      - intent: mood_unhappy
+      - action: utter_mood_unhappy
+
+  - story: bot identity challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - story: request for platform information
+    steps:
+      - intent: information
+      - action: utter_information
+
+  - story: request for diet or training
+    steps:
+      - intent: request_diet_or_training
+      - action: utter_request_diet_or_training
+
+  - story: request for best coach in a specific sport
+    steps:
+      - intent: find_coach
+        entities:
+          - sport: "football"
+      - action: action_find_best_coach
+      - slot_was_set:
+          - sport: "football"
+      - action: utter_find_best_coach
+
+  - story: request for general coach recommendation
+    steps:
+      - intent: find_coach
+      - action: utter_find_coach
+
+  - story: request for coach details
+    steps:
+      - intent: coach_details
+        entities:
+          - coach_name: "Li Wei"
+      - action: utter_coach_details
+
+  - story: request for coach availability
+    steps:
+      - intent: coach_availability
+        entities:
+          - coach_name: "Yang Ming"
+      - action: utter_coach_availability
+
+  - story: request for coach rate
+    steps:
+      - intent: coach_rate
+        entities:
+          - coach_name: "Liu Chen"
+      - action: utter_coach_rate
+
+  - story: request for coach location
+    steps:
+      - intent: coach_location
+        entities:
+          - coach_name: "Zheng Yi"
+      - action: utter_coach_location
+
+  - story: request for coach experience
+    steps:
+      - intent: coach_experience
+        entities:
+          - coach_name: "Sun Yang"
+      - action: utter_coach_experience
+
+  - story: request for coach language
+    steps:
+      - intent: coach_language
+        entities:
+          - coach_name: "Tang Wei"
+      - action: utter_coach_language

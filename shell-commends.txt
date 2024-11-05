@@ -1,9 +1,4 @@
-docker run -v ${PWD}:/app rasa/rasa:1.10.7 init --no-prompt (setting it up)
-
-"Your Rasa model is trained and saved at '/app/models/20241028-042243.tar.gz'."
+docker-compose exec rasa rasa shell (running it)
 
 
-docker run -v ${PWD}:/app rasa/rasa:1.10.7 shell (running it)
-
-
-CoachWise > docker run -v ${PWD}:/app rasa/rasa:1.10.7 train (training it)
+docker-compose exec rasa rasa train (training it)

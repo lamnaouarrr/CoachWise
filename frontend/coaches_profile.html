@@ -43,7 +43,7 @@
             </ul>
         </section>
 
-        <!-- Certifications Section (Now Styled Like Achievements) -->
+        <!-- Certifications Section -->
         <section class="certifications-section">
             <h3>Certifications</h3>
             <ul>
@@ -53,16 +53,65 @@
             </ul>
         </section>
 
-        <!-- Contact Section -->
-        <section class="contact-section">
-            <h3>Contact John</h3>
-            <p>If you're interested in working with John, reach out via the following channels:</p>
-            <ul>
-                <li>Email: john.doe@example.com</li>
-                <li>Phone: +1 234 567 890</li>
-                <li>Instagram: @john_doe_fitness</li>
-            </ul>
-            <button onclick="window.location.href='mailto:john.doe@example.com'" class="message-btn">Send a Message</button>
+        <!-- Coach Schedule Section -->
+        <section class="schedule-section">
+            <h3>Coach Schedule</h3>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Time Slot 10:00 - 11:00 -->
+                    <tr>
+                        <td>10:00 - 11:00</td>
+                        <td class="available">Available</td>
+                        <td class="unavailable">Unavailable</td>
+                        <td class="available">Available</td>
+                        <td class="unavailable">Unavailable</td>
+                        <td class="available">Available</td>
+                        <td class="available">Available</td>
+                    </tr>
+                    <!-- Time Slot 12:00 - 13:00 -->
+                    <tr>
+                        <td>12:00 - 13:00</td>
+                        <td class="unavailable">Unavailable</td>
+                        <td class="available">Available</td>
+                        <td class="unavailable">Unavailable</td>
+                        <td class="available">Available</td>
+                        <td class="unavailable">Unavailable</td>
+                        <td class="available">Available</td>
+                    </tr>
+                    <!-- Time Slot 14:00 - 15:00 -->
+                    <tr>
+                        <td>14:00 - 15:00</td>
+                        <td class="available">Available</td>
+                        <td class="available">Available</td>
+                        <td class="unavailable">Unavailable</td>
+                        <td class="unavailable">Unavailable</td>
+                        <td class="available">Available</td>
+                        <td class="unavailable">Unavailable</td>
+                    </tr>
+                    <!-- Time Slot 16:00 - 17:00 -->
+                    <tr>
+                        <td>16:00 - 17:00</td>
+                        <td class="unavailable">Unavailable</td>
+                        <td class="unavailable">Unavailable</td>
+                        <td class="available">Available</td>
+                        <td class="available">Available</td>
+                        <td class="unavailable">Unavailable</td>
+                        <td class="available">Available</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="window.location.href='payment.html'" class="book-btn">Book Coach</button>
         </section>
     </div>
 </body>

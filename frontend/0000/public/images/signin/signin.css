@@ -1,0 +1,232 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+/* Fullscreen background slideshow */
+.background-slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -2; /* Background stays behind */
+}
+
+.background-slideshow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slideshow 60s infinite ease-in-out;
+  z-index: -2;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+/* Keyframes for background slideshow with crossfade */
+@keyframes slideshow {
+  0% { opacity: 1; background-image: url('images/signin/img1.jpg'); }
+  
+  16.66% { opacity: 1; background-image: url('images/signin/img2.jpg'); }
+  
+  33.33% { opacity: 1; background-image: url('images/signin/img3.jpg'); }
+  
+  50% { opacity: 1; background-image: url('images/signin/img4.jpg'); }
+ 
+  66.66% { opacity: 1; background-image: url('images/signin/img5.jpg'); }
+ 
+  83.33% { opacity: 1; background-image: url('images/signin/img6.jpg'); }
+  
+  100% { opacity: 1; background-image: url('images/signin/img7.jpg'); }
+  
+  116.66% { opacity: 1; background-image: url('images/signin/img8.jpg'); }
+ 
+  133.33% { opacity: 1; background-image: url('images/signin/img9.jpg'); }
+ 
+  150% { opacity: 1; background-image: url('images/signin/img10.jpg'); }
+  
+  166.66% { opacity: 1; background-image: url('images/signin/img11.jpg'); }
+
+  183.33% { opacity: 1; background-image: url('images/signin/img12.jpg'); }
+}
+/* Center the form */
+.signin-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.2); /* Transparent background */
+  backdrop-filter: blur(10px); /* Glassy effect */
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  z-index: 1; /* Form stays in front */
+}
+
+/* Ensure the form's inputs are clickable */
+.signin-container form {
+  position: relative;
+  z-index: 1; /* Ensure form elements are focusable */
+}
+
+/* Sign-in heading */
+.signin-container h2 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  color: white;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 1.2em;
+}
+
+.form-group label {
+  color: white;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #333;
+  z-index: 1; /* Ensure input fields are focusable */
+}
+
+.form-group input:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Sign-in button */
+.btn-signin {
+  width: 100%;
+  padding: 0.8em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.btn-signin:hover {
+  background-color: #45a049;
+}
+
+/* Sign-up link */
+.signup-prompt {
+  text-align: center;
+  margin-top: 1em;
+  color: white;
+}
+
+.signup-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .signin-container {
+      padding: 1.5em;
+  }
+  
+  .signin-container h2 {
+      font-size: 1.5em;
+  }
+
+  .btn-signin {
+      padding: 0.6em;
+  }
+}
+/* Sign-in button */
+.btn-signin {
+  width: 100%;
+  padding: 0.8em;
+  background: linear-gradient(135deg, #5b5c5b, #81C784); /* Gradient background */
+  color: white;
+  border: none;
+  border-radius: 50px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for Sign-in button */
+.btn-signin:hover {
+  background: orange;
+}
+
+/* Active/Pressed effect for Sign-in button */
+.btn-signin:active {
+  transform: translateY(0); /* Return to original position when clicked */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Slightly smaller shadow on press */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

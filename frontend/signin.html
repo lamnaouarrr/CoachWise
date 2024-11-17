@@ -1,0 +1,39 @@
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signin.css"> <!-- Assuming your provided CSS is in style.css -->
+ 
+       
+
+</head>
+<body>
+    <!-- Fullscreen background slideshow -->
+    <div class="background-slideshow"></div>
+
+    <!-- Centered Sign In Form -->
+    <div class="signin-container">
+        <form class="signin-form" action="/submit-signin" method="POST">
+            <h2>WELCOME BACK TO COACHWISE</h2>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="btn-signin">Sign In</button>
+
+            <p class="signup-prompt">Don't have an account? <a href="signup.html" class="signup-link">Sign Up</a></p>
+        </form>
+    </div>
+</body>
+</html>

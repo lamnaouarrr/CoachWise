@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <!-- Background with overlay -->
+    <div class="background">
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Top Navigation Links -->
+    <div class="top-links">
+        <button onclick="window.location.href='index.html'" class="back-to-home-btn">🏠 Back to Home</button>
+        <div>
+            <button onclick="window.location.href='signin.html'" class="signin-btn">Already have an account? Sign In</button>
+        </div>
+    </div>
+
+    <!-- Main Sign-Up Choice -->
+    <div id="signup-choice" class="step">
+        <h2>I am looking for a</h2>
+        <button class="animated-btn" onclick="selectSignupType('customer')">Customer</button>
+        <button class="animated-btn" onclick="selectSignupType('coach')">Coach</button>
+    </div>
+
+    <!-- Customer Type Choice -->
+    <div id="customer-type-choice" class="step" style="display: none;">
+        <h2>Are you signing up as?</h2>
+        <button class="animated-btn" onclick="selectCustomerType('personal')">Personal</button>
+        <button class="animated-btn" onclick="selectCustomerType('institution')">Institution</button>
+        <div style="text-align: left;">
+            <button class="back-btn" onclick="goBackToSignupChoice()">👈 Back</button>
+        </div>
+    </div>
+
+    <!-- Customer Personal Form -->
+    <div id="customer-personal-form" class="step" style="display: none;">
+        <h2>Personal Information</h2>
+        <form id="signup-form">
+            <input type="text" id="first-name" placeholder="First Name" required>
+            <input type="text" id="last-name" placeholder="Family Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+            <input type="date" id="birthday" placeholder="Birthday" required>
+            <input type="tel" id="phone-number" placeholder="Phone Number" required>
+            <select id="gender" required>
+                <option value="" disabled selected>Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+                <option>Prefer not to say</option>
+            </select>
+            <label>Choose your sports:</label>
+            <select id="sport" required>
+                <option value="" disabled selected>Sport</option>
+                <option>Football</option>
+                <option>Volleyball</option>
+                <option>Swimming</option>
+                <option>Tennis</option>
+            </select>
+            <button type="submit" class="animated-btn">Submit</button>
+            <div style="text-align: left;">
+                <button type="button" class="back-btn" onclick="goBackToCustomerType()">👈 Back</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Customer Institution Form -->
+    <div id="customer-institution-form" class="step" style="display: none;">
+        <h2>Institution Information</h2>
+        <form>
+            <input type="text" placeholder="Institution Name" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <input type="text" placeholder="Address" required>
+            <input type="email" placeholder="Contact Email" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="url" placeholder="Website">
+            <label>Select your sports:</label>
+            <select required>
+                <option value="" disabled selected>Sport</option>
+                <option>Football</option>
+                <option>Volleyball</option>
+                <option>Swimming</option>
+                <option>Tennis</option>
+            </select>
+            <button type="submit" class="animated-btn">Submit</button>
+            <div style="text-align: left;">
+                <button type="button" class="back-btn" onclick="goBackToCustomerType()">👈 Back</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Coach Form -->
+    <div id="coach-form" class="step" style="display: none;">
+        <h2>Coach Information</h2>
+        <form id="coach-info-form">
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Family Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <input type="date" placeholder="Birthday" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <select required>
+                <option value="" disabled selected>Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <button type="button" class="animated-btn" onclick="showCoachProfessionalForm()">Next</button>
+            <div style="text-align: left;">
+                <button type="button" class="back-btn" onclick="goBackToCustomerOrCoachChoice()">👈 Back</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Coach Professional Form -->
+    <div id="coach-professional-form" class="step" style="display: none;">
+        <h2>Professional Information</h2>
+        <form>
+            <label>Sports Coached:</label>
+            <select required>
+                <option value="" disabled selected>Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+                <option>Prefer not to say</option>
+            </select>
+            <input type="number" placeholder="Years of Experience" required>
+            <select required>
+                <option value="" disabled selected>Coaching Level</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+                <option>Professional</option>
+            </select>
+            <label>Upload Certificates:</label>
+            <input type="file" accept=".pdf,.doc,.docx">
+            <input type="number" placeholder="Customer Age Range (Min)" required>
+            <input type="number" placeholder="Customer Age Range (Max)" required>
+            <input type="text" placeholder="Previous Teams/Clubs Coached (Optional)">
+            <label>Availability:</label>
+            <input type="file" accept=".pdf,.doc,.docx">
+            <input type="url" placeholder="LinkedIn">
+            <input type="url" placeholder="Facebook">
+            <input type="url" placeholder="Instagram">
+            <input type="url" placeholder="Twitter">
+            <button type="submit" class="animated-btn">Submit</button>
+            <div style="text-align: left;">
+                <button type="button" class="back-btn" onclick="goBackToCoachInformation()">👈 Back</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

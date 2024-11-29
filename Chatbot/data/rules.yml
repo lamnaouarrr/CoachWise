@@ -7,6 +7,11 @@ rules:
     - intent: greet
     - action: utter_greet
 
+- rule: Respond to how are you
+  steps:
+    - intent: ask_how_are_you
+    - action: utter_how_are_you
+
 - rule: Say goodbye
   steps:
     - intent: goodbye
@@ -50,14 +55,15 @@ rules:
 - rule: Handle find coach request
   steps:
     - intent: find_coach
-    - action: utter_find_coach
-
-- rule: Find best coach for a specific sport
-  steps:
-    - intent: find_coach
     - slot_was_set:
-        - sport: "some_sport"
+        - sport: some_sport
     - action: action_find_best_coach
+
+#- rule: Find best coach for a specific sport
+#  steps:
+#    - slot_was_set:
+#        - sport: "some_sport"
+#    - action: action_find_best_coach
 
 - rule: Provide coach details
   steps:

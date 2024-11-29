@@ -1,0 +1,15 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohLTMvJT45PzE5o7Y2FgB36h1s": "utter_ask_sport",
+    "eJyFjMEJgDAMAFfpAE7QVURCqBGDmpYk9VPc3YK+9XcHx43tGkIrSidgcs4SQ3sABA+K4ZWdzUl6W420NyxdPYaFZYaUMa3Xz6i6kwLaBlay+vdqugFRAjok": "action_listen",
+    "eJyljkEKwCAMBL/iA/oCv1JKEBtpaI0SYy/i3yvUew+97cAyu2vri2lZ8AbnlRJb094A7CJaM+GiosijWwvK6BAPVGsC8Q4+OX/0D1FVRQFXTig5if5RfXwiDkninOnbA43hVwM=": "action_find_best_coach",
+    "eJyljlEKhDAMRK/SA3iCXmVZQrcbMahpSaI/xbtbtP8V/JsHw5v5lGNwJQvuEKJRYu/KHYDDit41WEgNuXY3Rakd4orm3Uj8h5hCnI6OaDNDgaAzaE5ib1SdT8RjkrXNPFNd2z9Uawc6zu8JZGZ3Xg==": "action_listen",
+    "eJwtytEJgDAMRdFVMoATdBWRUPQhAU01Tf0J3d2C/t0Dd44+UVyGh/PqUjRRfMGaTyT6cUh16HhbhY1HdNATGe6G6rwJnIuxWxYV3XtfXkNuI3c=": "utter_request_diet_or_training",
+    "eJyVjUEKgDAMBL+SB/iCfkUkFF0koFHT1Evp3y3oVcTbDszu9qV2VHbDyXF02TRQuQNrXBHogUWSQ5ubE6w5og09kOHISM6TwHkzdouionP9mM3uMH5t//gZLvGITG0=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMgV+fkpSZWptbWxAExvTz0=": "utter_goodbye",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMgV+fkpSZWpRLoDqhi3KbEAotRp8w==": "action_listen"
+  }
+}

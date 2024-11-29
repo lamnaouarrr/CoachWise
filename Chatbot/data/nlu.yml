@@ -14,9 +14,18 @@ nlu:
       - yo
       - greetings
       - hello there
-      - what's up
       - hi, CoachWise
       - good day
+    
+  - intent: ask_how_are_you
+    examples: |
+      - how are you
+      - how are you doing
+      - what's up
+      - how's it going
+      - how do you feel
+      - are you doing well
+
 
   - intent: goodbye
     examples: |

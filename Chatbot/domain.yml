@@ -17,6 +17,7 @@ intents:
   - coach_language
   - information
   - request_diet_or_training
+  - ask_how_are_you
 
 entities:
   - sport
@@ -73,10 +74,13 @@ slots:
 
 responses:
   utter_greet:
-    - text: "Hey! How can I help you with finding the best coach today?"
+    - text: "Hey! How can I help you?"
+  
+  utter_how_are_you:
+    - text: "I'm just a bot, but I'm doing great! How can I assist you today?"
 
   utter_goodbye:
-    - text: "Goodbye! Feel free to come back anytime if you need help with coaching."
+    - text: "Goodbye! Feel free to come back anytime if you need help."
 
   utter_affirm:
     - text: "Alright! Let me know if there’s anything specific you’re looking for."
@@ -91,13 +95,13 @@ responses:
     - text: "I'm sorry to hear that. If there's anything I can do to help, just let me know."
 
   utter_iamabot:
-    - text: "I am a bot, here to help you find the perfect coach for your needs."
+    - text: "I am a bot, here to help you."
 
   utter_find_coach:
     - text: "Sure! Please let me know the type of sport or training you’re interested in, and I’ll suggest some top coaches for you."
 
-  utter_find_best_coach:
-    - text: "The best coach for {sport} is Coach {best_coach_name}."
+  utter_no_find_best_coach:
+    - text: "Sorry, I couldn't find any coaches for {sport}."
 
   utter_coach_details:
     - text: "Here’s what I know about {coach_name}. Let me pull up their details for you."

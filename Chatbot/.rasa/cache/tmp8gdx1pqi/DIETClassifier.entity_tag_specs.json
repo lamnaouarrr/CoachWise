@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-coach_name",
+      "2": "I-coach_name",
+      "3": "L-coach_name",
+      "4": "U-coach_name",
+      "5": "B-goal",
+      "6": "I-goal",
+      "7": "L-goal",
+      "8": "U-goal",
+      "9": "B-language",
+      "10": "I-language",
+      "11": "L-language",
+      "12": "U-language",
+      "13": "B-location",
+      "14": "I-location",
+      "15": "L-location",
+      "16": "U-location",
+      "17": "B-sport",
+      "18": "I-sport",
+      "19": "L-sport",
+      "20": "U-sport",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-coach_name": 1,
+      "I-coach_name": 2,
+      "L-coach_name": 3,
+      "U-coach_name": 4,
+      "B-goal": 5,
+      "I-goal": 6,
+      "L-goal": 7,
+      "U-goal": 8,
+      "B-language": 9,
+      "I-language": 10,
+      "L-language": 11,
+      "U-language": 12,
+      "B-location": 13,
+      "I-location": 14,
+      "L-location": 15,
+      "U-location": 16,
+      "B-sport": 17,
+      "I-sport": 18,
+      "L-sport": 19,
+      "U-sport": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

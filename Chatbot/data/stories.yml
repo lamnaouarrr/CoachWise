@@ -47,12 +47,12 @@ stories:
     - intent: request_diet_or_training
     - action: utter_request_diet_or_training
 
-- story: user requests a coach for a specific sport
-  steps:
-    - intent: find_coach
-    - slot_was_set:
-        - sport: "some_sport"
-    - action: action_find_best_coach
+#- story: user requests a coach for a specific sport
+#  steps:
+#    - intent: find_coach
+#    - slot_was_set:
+#        - sport: "some_sport"
+#    - action: action_find_best_coach
 
 - story: user requests general coach recommendation
   steps:

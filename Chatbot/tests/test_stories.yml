@@ -52,7 +52,7 @@ test_stories:
       - action: action_find_best_coach
       - slot_was_set:
           - sport: "football"
-      - action: utter_find_best_coach
+      - action: action_find_best_coach
 
   - story: request for general coach recommendation
     steps:

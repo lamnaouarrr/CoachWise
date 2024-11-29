@@ -1,7 +1,8 @@
 import pandas as pd
 from rasa_sdk import Action
-from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.events import SlotSet
+import os
+#from rasa_sdk.executor import CollectingDispatcher
+#from rasa_sdk.events import SlotSet
 
 class ActionFindBestCoach(Action):
     def name(self):
@@ -9,7 +10,14 @@ class ActionFindBestCoach(Action):
 
     def run(self, dispatcher, tracker, domain):
         # Load the dataset
-        coaches_df = pd.read_csv('/mnt/dataset/coaches_dataset.csv')
+        file_path = '/app/dataset/coaches_dataset.csv'
+        print(f"Checking file path: {file_path}, Exists: {os.path.exists(file_path)}")
+
+        try:
+            coaches_df = pd.read_csv(file_path)
+        except FileNotFoundError:
+            dispatcher.utter_message(text="The dataset could not be loaded. Please check the file path.")
+            return []
         
         # Get the sport from the slot
         sport = tracker.get_slot("sport")
@@ -18,7 +26,7 @@ class ActionFindBestCoach(Action):
         sport_coaches = coaches_df[coaches_df["Sport Type"].str.lower() == sport.lower()]
         
         if sport_coaches.empty:
-            dispatcher.utter_message(text=f"Sorry, I couldn't find any coaches for {sport}.")
+            dispatcher.utter_message(response="utter_no_best_coach_found")
             return []
         
         # Find the coach with the highest rating for the given sport
